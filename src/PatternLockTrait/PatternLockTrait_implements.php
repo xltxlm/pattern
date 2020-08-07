@@ -1,11 +1,11 @@
 <?php
-namespace xltxlm\pattern\LockTrait;
+namespace xltxlm\pattern\PatternLockTrait;
 
 /**
  * :Trait;
  * 最基础的锁模式;
 */
-Trait LockTrait_implements
+Trait PatternLockTrait_implements
 {
 
 

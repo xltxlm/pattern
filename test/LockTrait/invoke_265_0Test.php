@@ -4,6 +4,7 @@ namespace xltxlm\pattern\test\LockTrait;
 
 use PHPUnit\Framework\TestCase;
 use xltxlm\pattern\LockTrait;
+use xltxlm\pattern\PatternLockTrait;
 
 /**
  *
@@ -47,7 +48,7 @@ class invoke_265_0Test extends TestCase
 
 class locka
 {
-    use LockTrait;
+    use PatternLockTrait;
 
     /**
      *  开始创建锁，如果失败就异常，gg;

@@ -6,9 +6,9 @@ namespace xltxlm\pattern;
 /**
  * 最基础的锁模式;
  */
-Trait LockTrait
+Trait PatternLockTrait
 {
-    use LockTrait\LockTrait_implements;
+    use PatternLockTrait\PatternLockTrait_implements;
 
     /**
      * @return bool;
