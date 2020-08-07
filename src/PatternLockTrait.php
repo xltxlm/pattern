@@ -18,7 +18,7 @@ Trait PatternLockTrait
      */
     public function CallBack(string $key = null, callable $func = null): bool
     {
-        $this->Lock_Open();
+        $this->Lock_Open($key);
         //调起业务代码
         call_user_func($func);
         return $this->Lock_Close($key);
