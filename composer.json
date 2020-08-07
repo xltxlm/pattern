@@ -9,6 +9,7 @@
   "minimum-stability": "dev",
   "description":"实现一些基础的业务模式",
   "require": {
+    "php": "~7.2"
   },
   "autoload": {
     "psr-4": {

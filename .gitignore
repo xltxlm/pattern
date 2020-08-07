@@ -9,3 +9,4 @@ log@*.json
 vendor/**/.git
 Siteroot
 vendor
+*.7z
