@@ -12,15 +12,15 @@ Trait PatternLockTrait_implements
 /**
 * @var string $key  
 *  开始创建锁，如果失败就异常，gg;
-*  @return ;
+*  @return bool;
 */
-abstract protected function Lock_Open(string $key = null);
+abstract protected function Lock_Open(string $key = null):bool;
 /**
 * @var string $key  
 *  解锁，解锁失败，也是gg掉;
-*  @return ;
+*  @return bool;
 */
-abstract protected function Lock_Close(string $key = null);
+abstract protected function Lock_Close(string $key = null):bool;
 /**
 * @var string $key  
 * @var callable $func  

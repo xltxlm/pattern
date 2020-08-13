@@ -11,7 +11,9 @@ use xltxlm\pattern\PatternLockTrait;
  */
 class invoke_265_0Test extends TestCase
 {
-    use invoke_265_0Test\invoke_265_0Provider; #<---本次测试的数据供给来源
+    use invoke_265_0Test\invoke_265_0Provider;
+
+    #<---本次测试的数据供给来源
 
     /**
      * @test
@@ -37,7 +39,7 @@ class invoke_265_0Test extends TestCase
         $name = "-";
         ob_start();
         $locka = new locka();
-        $locka->CallBack("hello",function () use ($name) {
+        $locka->CallBack("hello", function () use ($name) {
             echo $name;
         });
         return ob_get_clean();
@@ -58,6 +60,7 @@ class locka
     public function Lock_Open(string $key = null)
     {
         echo "Lock_Start";
+        return true;
     }
 
     /**
